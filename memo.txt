@@ -1,0 +1,20 @@
+flow相关的rest服务
+    packages\node_modules\@node-red\runtime\lib\api\flows.js
+flow相关的rest服务的上一层
+    packages\node_modules\@node-red\editor-api\lib\admin\flows.js
+更上一层
+    packages\node_modules\@node-red\runtime\lib\nodes\flows\index.js
+如果要新增接口
+    packages\node_modules\@node-red\editor-api\lib\admin\index.js
+flow存储位置
+    C:\Users\fgt\.node-red
+    flows_DESKTOP-1RM8AKI.json
+    flows_DESKTOP-1RM8AKI_cred.json
+激活一个tab的流程
+    packages\node_modules\@node-red\editor-client\src\js\red.js的loadFlows方法中获取当前url路径并调用
+    packages\node_modules\@node-red\editor-client\src\js\ui\workspaces.js的show方法，然后调用
+    packages\node_modules\@node-red\editor-client\src\js\ui\common\tabs.js的activateTab方法
+不要自动跳转url
+    packages\node_modules\@node-red\editor-client\src\js\ui\workspaces.js的createWorkspaceTabs
+url带only时隐藏其它tab、不显示add flow按钮、不显示搜索按钮
+    packages\node_modules\@node-red\editor-client\src\js\ui\common\tabs.js的createTabs

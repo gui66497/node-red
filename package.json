@@ -57,6 +57,7 @@
         "node-red-node-rbe": "^0.2.5",
         "node-red-node-sentiment": "^0.1.4",
         "node-red-node-tail": "^0.0.3",
+        "node-red-contrib-logstash": "^0.0.3",
         "nopt": "4.0.1",
         "oauth2orize": "1.11.0",
         "on-headers": "1.0.2",
