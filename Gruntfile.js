@@ -196,6 +196,7 @@ module.exports = function(grunt) {
                         "packages/node_modules/@node-red/editor-client/src/vendor/jsonata/formatter.js",
                         "packages/node_modules/@node-red/editor-client/src/vendor/ace/ace.js",
                         "packages/node_modules/@node-red/editor-client/src/vendor/ace/ext-language_tools.js",
+                        "packages/node_modules/@node-red/editor-client/src/vendor/select2/js/select2.min.js"
                     ],
                     // "packages/node_modules/@node-red/editor-client/public/vendor/vendor.css": [
                     //     // TODO: resolve relative resource paths in
@@ -354,7 +355,8 @@ module.exports = function(grunt) {
                         src: [
                             'ace/**',
                             'jquery/css/base/**',
-                            'font-awesome/**'
+                            'font-awesome/**',
+                            'select2/**'
                         ],
                         expand: true,
                         dest: 'packages/node_modules/@node-red/editor-client/public/vendor/'
