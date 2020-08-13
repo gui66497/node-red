@@ -24,4 +24,8 @@ url带only时隐藏其它tab、不显示add flow按钮、不显示搜索按钮
 如要引入第三方控件，这里那select2做例子
     将资源文件拷贝到packages\node_modules\@node-red\editor-client\src\vendor\目录下
     修改Gruntfile.js的copy.build.files和concat.vendor.files
+前端getMatchRule接口改为通过后端去调用
+    先在@node-red/editor-api/lib/admin/index.js中加入一条映射语句
+    然后在@node-red/editor-api/lib/admin/flow.js中编写controller
+    最后在@node-red/runtime/lib/api/flows.js中编写具体逻辑
 
